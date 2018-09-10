@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/mn-favicon.png">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- fontawesome files -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+
+<!-- MOBILE NAVIGATION -->
+    <!-- top logo for mobile -->
+    <div id="mobile-logo"><a class="morgan" href="index.html"><img src="images/mn-logo.png" alt=""></a></div>
+    <nav class="mobile-menu">
+      <span onclick="dropdownFunction()" class="fa fa-bars dropbtn" aria-hidden="true"></span>
+      <ul id="myDropdown" class="mobilenavmenu">
+        <li class="navlinks mobilenav"><a href="index.html">Home</a></li>
+        <li class="navlinks mobilenav"><a href="index.html#about-section">About</a></li>
+        <!-- work drop down menu -->
+        <li class="navlinks dropdown mobilenav accordion" onclick="openwork()"><a href="#">+ Work</a>
+          <div id="showwork" class="accordion-dropdown">
+            <a class="worklink" href="webdevelopment.html">Web Development</a>
+            <a class="worklink designlink" href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks mobilenav"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<!-- REGULAR NAVIGATION -->
+    <nav id="navigation">
+      <ul>
+        <li id="logo"><a class="morgan" href="index.html"><img src="images/mn-logo.png" alt=""></a></li>
+        <li class="navlinks"><a href="index.html">Home</a></li>
+        <li class="navlinks"><a href="index.html#about-section">About</a></li>
+        <!-- drop down menu -->
+        <li class="navlinks dropdown"><a href="#">+ Work</a>
+          <div class="dropdown-content">
+            <a href="webdevelopment.html">Web Development</a>
+            <a href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<!-- CONTACT SECTION -->
+    <h3 class="contact-header">Let's get in touch...</h3>
+    <p class="contact-paragraph">Thanks for viewing my portfolio. Like my work? Feel free to send me an email.</p>
+
+      <!-- contact form -->
+      <form action="home.html" method="post">
+        <input type="text" name="firstname" placeholder="First Name" required>
+        <input type="text" name="lastname" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="julie@gmail.com" required>
+        <textarea name="message" rows="15" cols="69.9"></textarea>
+        <input class="send-btn" type="submit" value="Submit">
+      </form>
+      <div class="email-info">
+        <h3 class="email-header">Email</h3>
+        <p class="email-address"><a href="mailto:morgannimmons@gmail.com">morgannimmons@gmail.com</a></p>
+      </div>
+  </body>
+
+  <!-- FOOTER -->
+  <footer>&copy; 2017 Morgan R. Nimmons. All rights reserved</footer>
+</html>

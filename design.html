@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/mn-favicon.png">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400" rel="stylesheet">
+
+    <!-- fontawesome icons file -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+
+<!-- MOBILE NAVIGATION -->
+    <!-- top logo for mobile -->
+    <div id="mobile-logo"><a class="morgan" href="index.html"><img src="images/mn-logo.png" alt=""></a></div>
+    <nav class="mobile-menu">
+      <!-- <button onclick="dropdownFunction()" class="dropbtn"><span class="fa fa-bars" aria-hidden="true"></span></button> -->
+      <span onclick="dropdownFunction()" class="fa fa-bars dropbtn" aria-hidden="true"></span>
+      <ul id="myDropdown" class="mobilenavmenu">
+        <li class="navlinks mobilenav"><a href="index.html">Home</a></li>
+        <li class="navlinks mobilenav"><a href="index.html#about-section">About</a></li>
+        <!-- work drop down menu -->
+        <li class="navlinks dropdown mobilenav accordion" onclick="openwork()"><a href="#">+ Work</a>
+          <div id="showwork" class="accordion-dropdown">
+            <a class="worklink" href="webdevelopment.html">Web Development</a>
+            <a class="worklink designlink" href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks mobilenav"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<!-- REGULAR NAVIGATION -->
+    <nav id="navigation">
+      <ul>
+        <li id="logo"><a class="morgan" href="index.html"><img src="images/mn-logo.png" alt=""></a></li>
+        <li class="navlinks"><a href="index.html">Home</a></li>
+        <li class="navlinks"><a href="index.html#about-section">About</a></li>
+        <!-- drop down menu -->
+        <li class="navlinks dropdown"><a href="#">+ Work</a>
+          <div class="dropdown-content">
+            <a href="webdevelopment.html">Web Development</a>
+            <a href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- DESIGN PROJECTS -->
+    <section class="webdevprojects graphicdesign-projects">
+
+      <h3 class="work-header">Design</h3>
+
+      <!-- project 1 -->
+      <figure class="project one">
+        <img class="webprojects graphicprojects" src="images/cannabinoid-app-cover.jpg" alt="Cannabinoid App Design" width="285px" height="185px">
+        <figcaption>Cannabinoid Water App</figcaption>
+        <button id="open-modal" class="project-redirect" type="button" name="button" onclick="viewModal()">View Project</button>
+
+        <!-- Modal 1 -->
+        <div id="modal1" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close" class="close-window" onclick="closeModal()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption">Cannabinoid Water App</h3>
+            <p class="modal-description">App design for the company, Cannabinoid Water. Created wireframes and designed UI in Sketch.</p>
+            <img class="m-img m-img1" src="images/cannabinoid-ui-design.jpg" alt="cannabinoid app screens">
+            <img class="m-img m-img2" src="images/cannabinoid-ui-design-2.jpg" alt="cannabinoid app screens">
+            <img class="m-img m-img3 image-overide" src="images/cannabinoid-wireframes.jpg" alt="">
+          </div>
+        </div>
+      </figure>
+
+      <!-- project 2 -->
+      <figure class="project two">
+        <img class="webprojects graphicprojects" src="images/atmos-app-ui.jpg" alt="Atmos App Design" width="285px" height="185px">
+        <figcaption>Atmos App Design</figcaption>
+        <button id="open-modal2" class="project-redirect" type="button" name="button" onclick="viewModal2()">View Project</button></a>
+
+        <!-- Modal 2 -->
+        <div id="modal2" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close2" class="close-window" onclick="closeModal2()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption2">Atmos App Design</h3>
+            <p class="modal-description">App design for the stargazing app, Atmos. Designed the UI in Adobe Photoshop.</p>
+            <img class="m-img m-img1" src="images/atmos-app-ui.jpg" alt="Atmos App home screen">
+            <img class="m-img m-img2 image-overide-2" src="images/atmos-app-screens.jpg" alt="Atmos App screens">
+          </div>
+        </div>
+      </figure>
+
+
+      <!-- project 3 -->
+      <figure class="project three">
+        <img class="webprojects graphicprojects" src="images/atmos-website-cover.jpg" alt="Atmos App website" width="285px" height="185px">
+        <figcaption>Atmos App Website</figcaption>
+        <button id="open-modal3" class="project-redirect" type="button" name="button" onclick="viewModal3()">View Project</button></a>
+
+        <!-- Modal 3 -->
+        <div id="modal3" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close3" class="close-window" onclick="closeModal3()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption3">Atmos App Website</h3>
+            <p class="modal-description">Website for the Atmos App. Designed in Adobe Photoshop.</p>
+            <img class="m-img m-img1" src="images/atmos-website-home.png" alt="">
+            <img class="m-img m-img2" src="images/atmos-website-about.png" alt="">
+            <img class="m-img m-img3 image-overide-1" src="images/atmos-website-features.png" alt="">
+            <img class="m-img m-img4 image-override-4" src="images/atmos-website-contact.png" alt="">
+          </div>
+        </div>
+      </figure>
+
+
+      <!-- project 4 -->
+      <figure class="project four">
+        <img class="webprojects graphicprojects" src="images/flat-design-cover.jpg" alt="Flat Design PSD Mockup" width="285px" height="185px">
+        <figcaption>Flat Design PSD Mockup</figcaption>
+        <button id="open-modal4" class="project-redirect" type="button" name="button" onclick="viewModal4()">View Project</button>
+
+        <!-- Modal 4 -->
+        <div id="modal4" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close4" class="close-window" onclick="closeModal4()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption4">Flat Design PSD Mockup</h3>
+            <p class="modal-description desc-space4">Personal portfolio website PSD in the style of flat and material design.
+            Illustrations were created in Adobe Illustrator.</p>
+            <img class="m-img m-img1" src="images/flat-design-1.png" alt="">
+            <img class="m-img m-img2" src="images/flat-design-2.png" alt="">
+            <img class="m-img m-img3" src="images/flat-design-3.png" alt="">
+          </div>
+        </div>
+      </figure>
+
+
+      <!-- project 5 -->
+      <figure class="project five">
+        <img class="webprojects graphicprojects" src="images/pb-eats-desktop.png" alt="Palm Beach Eats Restaurant Website" width="285px" height="185px">
+        <figcaption>Palm Beach Eats Restaurant</figcaption>
+        <button id="open-modal5" class="project-redirect" type="button" name="button" onclick="viewModal5()">View Project</button></a>
+
+        <!-- Modal 5 -->
+        <div id="modal5" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close5" class="close-window" onclick="closeModal5()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption5">Palm Beach Eats Restaurant</h3>
+            <p class="modal-description desc-space5">Website design for a fictional Italian restaurant, Palm Beach Eats.</p>
+            <img class="m-img m-img1" src="images/pb-eats-website-1.jpg" alt="">
+            <img class="m-img m-img2" src="images/pb-eats-website-2.jpg" alt="">
+            <img class="m-img m-img3 image-overide-1" src="images/pb-eats-website-3.jpg" alt="">
+            <img class="m-img m-img4" src="images/pb-eats-website-4.jpg" alt="">
+            <img class="m-img m-img5" src="images/pb-eats-website-5.jpg" alt="">
+          </div>
+        </div>
+      </figure>
+
+
+      <!-- project 6 -->
+      <figure class="project six">
+        <img class="webprojects graphicprojects" src="images/aero-apparel-cover.jpg" alt="Aero Apparel Brand Identity" width="285px" height="185px">
+        <figcaption>Aero Apparel Corporate Identity</figcaption>
+        <button id="open-modal6" class="project-redirect" type="button" name="button" onclick="viewModal6()">View Project</button></a>
+
+
+        <!-- Modal 6 -->
+        <div id="modal6" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close6" class="close-window" onclick="closeModal6()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption6">Aero Apparel Corporate Identity</h3>
+            <p class="modal-description desc-space6">Aero Apparel is a fictional fitness apparel company. Branding was designed in Adobe Illustrator.</p>
+            <img class="m-img m-img1" src="images/aero-apparel-1.jpg" alt="">
+            <img class="m-img m-img2" src="images/aero-apparel-2.jpg" alt="">
+            <img class="m-img m-img3 image-overide-1" src="images/aero-apparel-3.jpg" alt="">
+            <img class="m-img m-img4" src="images/aero-apparel-4.png" alt="">
+            <img class="m-img m-img5" src="images/aero-apparel-5.png" alt="">
+          </div>
+        </div>
+      </figure>
+
+
+      <!-- project 7 -->
+      <figure class="project seven">
+        <img class="webprojects graphicprojects" src="images/cloud9-cover.jpg" alt="Cloud 9 Wine Labels" width="285px" height="185px">
+        <figcaption>Cloud 9 Wine</figcaption>
+        <button id="open-modal7" class="project-redirect" type="button" name="button" onclick="viewModal7()">View Project</button></a>
+
+        <!-- Modal 5 -->
+        <div id="modal7" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close7" class="close-window" onclick="closeModal7()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption7">Cloud 9 Wine</h3>
+            <p class="modal-description">Wine bottle labels created using Adobe Illustrator.</p>
+            <img id="cloud-9" class="m-img m-img1 wine-label" src="images/cloud-9-1.png" alt="">
+            <img class="m-img m-img2 wine-label" src="images/cloud-9-2.png" alt="">
+            <img class="m-img m-img3 image-overide-1 wine-label" src="images/cloud-9-3.png" alt="">
+            <img class="m-img m-img4-overide" src="images/cloud-9-4.jpg" alt="">
+          </div>
+        </div>
+      </figure>
+
+
+      <!-- project 8 -->
+      <figure class="project eight">
+        <img class="webprojects graphicprojects" src="images/ye-mag-cover.jpg" alt="Young and Employed Magazine" width="285px" height="185px">
+        <figcaption>Young + Employed Magazine</figcaption>
+        <button id="open-modal8" class="project-redirect" type="button" name="button" onclick="viewModal8()">View Project</button></a>
+
+        <!-- Modal 8 -->
+        <div id="modal8" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close8" class="close-window" onclick="closeModal8()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption8">Young + Employed Magazine</h3>
+            <p class="modal-description desc-space8">Magazine spread designed in Adobe InDesign for college-aged students.</p>
+            <img class="m-img m-img1" src="images/y+e-magazine-1.jpg" alt="">
+            <img class="m-img m-img2" src="images/y+e-magazine-2.jpg" alt="">
+            <img class="m-img m-img3 image-overide-1" src="images/y+e-magazine-3.jpg" alt="">
+            <img class="m-img m-img4" src="images/y+e-magazine-4.jpg" alt="">
+            <img id="ye-mag" class="m-img m-img5" src="images/y+e-magazine-5.jpg" alt="">
+            <img id="ye-mag-bottom" class="m-img m-img6" src="images/y+e-magazine-6.jpg" alt="">
+          </div>
+        </div>
+      </figure>
+
+
+      <!-- project 9 -->
+      <figure class="project nine">
+        <img class="webprojects graphicprojects" src="images/taskcentre-guide-cover.jpg" alt="Reseller Partners Marketing Kit" width="285px" height="185px">
+        <figcaption>Reseller Partners Marketing Kit</figcaption>
+        <button id="open-modal9" class="project-redirect" type="button" name="button" onclick="viewModal9()">View Project</button></a>
+
+        <!-- Modal 9 -->
+        <div id="modal9" class="modal">
+
+          <!-- Modal content  -->
+          <span id="close9" class="close-window" onclick="closeModal9()">&times;</span>
+          <div class="modal-content">
+            <h3 id="caption9">Reseller Partners Marketing Kit</h3>
+            <p class="modal-description desc-space9">Marketing kit distributed to software Reseller Partners. Designed in
+            Adobe InDesign and Adobe Photoshop.</p>
+            <img id="reseller-kit1"class="m-img m-img1" src="images/reseller-kit-1.jpg" alt="">
+            <img id="reseller-kit2" class="m-img m-img2" src="images/reseller-kit-2.jpg" alt="">
+          </div>
+        </div>
+      </figure>
+
+      <!-- download portfolio link -->
+      <a id="download-portfolio" href="files/portfolio-2018.pdf"><button type="button" name="button">Download Portfolio</button></a>
+      </section>
+  </body>
+
+  <!-- FOOTER -->
+  <footer id="footer-bottom">&copy; 2017 Morgan R. Nimmons. All rights reserved</footer>
+</html>

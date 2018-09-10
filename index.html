@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Morgan R. Nimmons | Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/mn-favicon.png">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+
+    <!-- fontawesome icons file -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body id="home-body">
+
+<!-- back to top button -->
+    <button id="back-to-top" class="fa fa-arrow-circle-up" type="button" name="button"  aria-hidden="true" onclick="topPage()"></button>
+
+<!-- hero image -->
+    <img id="background-img" src="images/header-background.png" alt="marble background">
+
+
+<!-- mobile navigation -->
+    <nav class="mobile-menu">
+      <span onclick="dropdownFunction()" class="fa fa-bars dropbtn" aria-hidden="true"></span>
+      <ul id="myDropdown" class="mobilenavmenu">
+        <li class="navlinks mobilenav"><a href="index.html">Home</a></li>
+        <li class="navlinks mobilenav"><a href="#about-section">About</a></li>
+        <!-- work drop down menu -->
+        <li class="navlinks dropdown mobilenav accordion" onclick="openwork()"><a href="#">+ Work</a>
+          <div id="showwork" class="accordion-dropdown">
+            <a class="worklink" href="webdevelopment.html">Web Development</a>
+            <a class="worklink designlink" href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks mobilenav"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+<!-- regular navigation -->
+    <nav id="home-nav">
+      <ul>
+        <li class="navlinks"><a href="index.html">Home</a></li>
+        <li class="navlinks"><a href="#about-section">About</a></li>
+        <!-- work drop down menu -->
+        <li class="navlinks dropdown"><a href="#">+ Work</a>
+          <div class="dropdown-content">
+            <a href="webdevelopment.html">Web Development</a>
+            <a href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+
+<!-- Header -->
+    <header>
+      <h1 class="name-header">Morgan Nimmons</h1>
+      <h3 class="description">Developer &amp; Designer</h3>
+    </header>
+
+<!-- About -->
+    <section id="about-section">
+      <div class="about-content">
+        <h2 class="about-text about-header">About Me</h2>
+        <p class="about-text about-paragraph">I'm a Front End Developer and Designer with a focus on user-centered designs to improve applications and systems. I'm passionate about enhancing a user's experience by designing platforms and interfaces that provide improved usability and a clear purpose.</p>
+        <br>
+        <p class="about-text about-paragraph">My skillset includes HTML5, CSS3, Sass, JavaScript & JQuery, Ruby, UI Design, and Adobe CC. I'm a recent graduate of Flatiron School with a concentration in Full Stack Web Development.</p>
+        <br>
+        <!-- <p class="about-text about-paragraph">My undergraduate background in Communications and Marketing, as well as learning web development enables me to be a more
+        skillful designer by approaching projects from a visual and technical prospective.</p> -->
+        <p class="about-text about-paragraph">When I’m not designing, or coding, you’ll find me hanging out with my family and friends, drawing, or binge watching Netflix movies and shows.</p>
+
+        <!-- social media links -->
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/mnimmons/" target="_blank"><img class="socialmedia" src="images/linkedin.png" alt="LinkedIn logo"></a>
+          <a href="https://github.com/mnimmz" target="_blank"><img class="socialmedia" src="images/github.png" alt="Github logo"></a>
+          <!-- <a href="https://twitter.com/morgansdomain" target="_blank"><img class="socialmedia" src="images/twitter.png" alt=""></a> -->
+          <!-- <a href="https://drive.google.com/uc?export=download&id=1v5PpGPvXRR1EWN2zxWlekb6SX1pYXdMP"><img class="socialmedia" src="images/download.png" alt=""></a> -->
+        </div>
+      </div>
+    </section>
+
+<!-- Recent Projects section -->
+    <section class="recent-projects">
+
+      <!-- skills section -->
+      <section class="skills">
+        <h3 class="work-header skills-header">Skills</h3>
+        <!-- skills logos -->
+        <img id="html-logo" src="images/html-logo.png" class="skills-img" alt="" onmouseover="hoverOverHtml()" onmouseout="hoverOutHtml()" >
+        <img id="css-logo" src="images/css-logo.png" class="skills-img" alt="" onmouseover="hoverOverCss()" onmouseout="hoverOutCss()">
+        <img id="javascript-logo" src="images/javascript-logo.png" class="skills-img" alt="" onmouseover="hoverOverJavascript()" onmouseout="hoverOutJavascript()">
+        <img id="java-logo" src="images/java-logo.png" alt="" class="skills-img" onmouseover="hoverOverJava()" onmouseout="hoverOutJava()">
+        <img id="wordpress-logo" src="images/wordpress-logo.png" alt="" class="skills-img" onmouseover="hoverOverWordpress()" onmouseout="hoverOutWordpress()">
+        <br><img id="ps-logo" src="images/ps-logo.png" alt="" class="skills-img" onmouseover="hoverOverPs()" onmouseout="hoverOutPs()" >
+        <img id="ai-logo" src="images/ai-logo.png" alt="" class="skills-img" onmouseover="hoverOverAi()" onmouseout="hoverOutAi()">
+        <img id="xd-logo" src="images/xd-logo.png" alt="" class="skills-img" onmouseover="hoverOverXd()" onmouseout="hoverOutXd()">
+        <img id="sketch-logo" src="images/sketch-logo.png" alt="" class="skills-img" onmouseover="hoverOverSketch()" onmouseout="hoverOutSketch()">
+
+      </section>
+
+      <!-- recent projects -->
+      <h3 class="work-header">Recent Projects</h3>
+
+      <figure class="project one">
+        <img class="dev-project" src="images/ruby-project.png" alt="Vevo Trending Videos CLI App" width="285px" height="185px">
+        <figcaption class="recent-description">Vevo Trending Videos CLI App</figcaption>
+        <a href="https://github.com/mnimmz/vevo-trending-cli-app" target="_blank"><button class="project-redirect recent-btn" type="button" name="button">View on GitHub</button></a>
+      </figure>
+
+      <figure class="project two">
+        <img class="dev-project" src="images/color-game.png" alt="Color Game" width="285px" height="185px">
+        <figcaption class="recent-description">Javascript Color Game</figcaption>
+        <a href="https://github.com/mnimmz/color-game" target="_blank"><button class="project-redirect recent-btn" type="button" name="button">View on GitHub</button></a>
+      </figure>
+
+      <figure class="project three">
+        <img class="dev-project" src="images/cannabinoid-app-cover.jpg" alt="Cannabinoid Water App" width="285px" height="185px">
+        <figcaption class="recent-description">Cannabinoid Water App</figcaption>
+        <a href="http://morgannimmons.com/design.html" target="_blank"><button class="project-redirect recent-btn" type="button" name="button">View Recent Design Projects</button></a>
+      </figure>
+
+      <button id="view-projects" type="button" name="button"><a href="webdevelopment.html" target="_blank">View More</a></button>
+      <div class="horizonal-line"></div>
+    </section>
+  </body>
+
+<!-- footer -->
+  <footer>&copy; 2017 Morgan R. Nimmons. All rights reserved</footer>
+</html>

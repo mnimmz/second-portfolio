@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Web Development</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/mn-favicon.png">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Zilla+Slab" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- fontawesome files -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+
+<!-- MOBILE NAVIGATION -->
+    <!-- top logo for mobile -->
+    <div id="mobile-logo"><a class="morgan" href="index.html"><img src="images/mn-logo.png" alt=""></a></div>
+    <nav class="mobile-menu">
+      <span onclick="dropdownFunction()" class="fa fa-bars dropbtn" aria-hidden="true"></span>
+      <ul id="myDropdown" class="mobilenavmenu">
+        <li class="navlinks mobilenav"><a href="index.html">Home</a></li>
+        <li class="navlinks mobilenav"><a href="index.html#about-section">About</a></li>
+        <!-- work drop down menu -->
+        <li class="navlinks dropdown mobilenav accordion" onclick="openwork()"><a href="#">+ Work</a>
+          <div id="showwork" class="accordion-dropdown">
+            <a class="worklink" href="webdevelopment.html">Web Development</a>
+            <a class="worklink designlink" href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks mobilenav"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<!-- REGULAR NAVIGATION -->
+    <nav id="navigation">
+      <ul>
+        <li id="logo"><a class="morgan" href="index.html"><img src="images/mn-logo.png" alt=""></a></li>
+        <!-- <li id="logo"><a class="morgan" href="index.html">Morgan R. Nimmons</a></li> -->
+        <li class="navlinks"><a href="index.html">Home</a></li>
+        <li class="navlinks"><a href="index.html#about-section">About</a></li>
+        <!-- drop down menu -->
+        <li class="navlinks dropdown"><a href="#">+ Work</a>
+          <div class="dropdown-content">
+            <a href="webdevelopment.html">Web Development</a>
+            <a href="design.html">Design</a>
+          </div>
+        </li>
+        <li class="navlinks"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+<!-- WEB DEVELOPMENT PROJECTS -->
+      <section class="webdevprojects">
+        <h3 class="work-header project-header">Web Development</h3>
+
+        <!-- project 1 -->
+        <figure class="project one">
+          <img class="webprojects" src="images/ruby-project.png" alt="Vevo Trending Videos" width="285px" height="185px">
+          <figcaption>Vevo Trending Videos CLI App</figcaption>
+          <a href="https://github.com/mnimmz/vevo-trending-cli-app" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure>
+
+        <!-- project 2 -->
+        <figure class="project two">
+          <img class="webprojects" src="images/color-game.png" alt="Color game" width="285px" height="185px">
+          <figcaption>Javascript Color Game</figcaption>
+          <a href="https://github.com/mnimmz/color-game" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure>
+
+        <!-- project 3 -->
+        <!-- <figure class="project three">
+          <img class="webprojects" src="images/skyline-website.jpg" alt="Skyline Website" width="285px" height="185px">
+          <figcaption>Skyline Website</figcaption>
+          <a href="https://github.com/mnimmz/skyline-website/wiki" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure> -->
+
+        <!-- project 4 -->
+        <figure class="project four">
+          <img class="webprojects" src="images/gasstationapp.jpg" alt="Gas Station Application" width="285px" height="185px">
+          <figcaption>Javascript Music Boxes</figcaption>
+          <a href="https://github.com/mnimmz/js-music-boxes" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure>
+
+        <!-- project 5 -->
+        <figure class="project five">
+          <img class="webprojects" src="images/pbsc-desktop-homepage.png" alt="Palm Beach State College Redesign" width="285px" height="185px">
+          <figcaption>Palm Beach State College Redesign</figcaption>
+          <a href="https://github.com/mnimmz/palmbeachstatecollege-redesign" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure>
+
+        <!-- project 6 -->
+        <figure class="project six">
+          <img class="webprojects" src="images/mrn-photo-desktop-homepage.png" alt="Photography Portfolio" width="285px" height="185px">
+          <figcaption>Photography Portfolio</figcaption>
+          <a href="https://github.com/mnimmz/photography-portfolio" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure>
+
+        <!-- project 7 -->
+        <figure class="project seven">
+          <img class="webprojects" src="images/mrn-portfolio-desktop.png" alt="Morgan Nimmons Portfolio" width="285px" height="185px">
+          <figcaption>Morgan Nimmons Portfolio</figcaption>
+          <a href="https://github.com/mnimmz/morgan-nimmons-portfolio" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure>
+
+        <!-- project 8 -->
+        <!-- <figure class="project eight">
+          <img class="webprojects" src="images/the-pasta-kitchn.jpg" alt="The Pasta Kitchn" width="285px" height="185px">
+          <figcaption>The Pasta Kitchn</figcaption>
+          <a href="https://github.com/mnimmz/palmbeachstatecollege-redesign/wiki/Palm-Beach-State-College-Redesign" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure> -->
+
+        <!-- project 9 -->
+        <!-- <figure class="project nine">
+          <img class="webprojects" src="images/coconut-manor-suites.png" alt="Coconut Manor Suites Website" width="285px" height="185px">
+          <figcaption>Coconut Manor Suites Website</figcaption>
+          <a href="https://github.com/mnimmz/coconut-manor-suites" target="_blank"><button class="project-redirect" type="button" name="button">View on GitHub</button></a>
+        </figure> -->
+      </section>
+  </body>
+
+  <!-- FOOTER -->
+  <footer>&copy; 2017 Morgan R. Nimmons. All rights reserved</footer>
+</html>
